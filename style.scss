@@ -104,3 +104,16 @@ body {
     text-decoration: none;
     font-weight: 500;
 }
+
+.main-containaer{
+    display: grid;
+    grid-template-columns: 3, max-content;
+    grid-template-areas: "hero" "aside" "products";
+
+}
+
+.hero {
+    grid-area: "hero";
+    
+}
+
