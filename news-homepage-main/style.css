@@ -4,7 +4,7 @@
 }
 
 :root {
-  --Soft-orange:hsl(35, 77%, 62%);
+  --Soft-orange: hsl(35, 77%, 62%);
   --Soft-red: hsl(5, 85%, 63%);
   --fff-white: hsl(36, 100%, 99%);
   --Grayish-blue: hsl(233, 8%, 79%);
@@ -22,26 +22,39 @@ body {
   max-width: 1200px;
   overflow: hidden;
 }
-.header__nav {
+
+.nav {
   display: grid;
-  grid-template-columns: repeat 2 max-content;
+  grid-template-columns: repeat(2, max-content);
   justify-content: space-between;
   align-items: center;
   height: 80px;
   --transform-hamburguer: scale(1);
   --transform-close: scale(0);
 }
-.header__nav__logo__links {
+
+.nav__link {
   display: none;
 }
-.header__nav__logo__links__link__menu {
+
+.link__menu {
   transform: var(--transform-hamburguer);
-  grid-row: 1/2;
 }
-.header__nav__logo__links__link__menu__icon__menu2__close {
+
+.link__close {
   transform: var(--transform-close);
+}
+
+.nav:has(.nav__links:target) {
+  --transform-hamburguer: scale(0);
+  --transform-close: scale(1);
+}
+
+.link__menu,
+.link__close {
   grid-column: span 1/-1;
-  grid-row: 1/2;
+  grid-row: -1/2;
+  transition: 0.2s transform;
 }
 
 /*# sourceMappingURL=style.css.map */

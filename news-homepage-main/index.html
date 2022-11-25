@@ -22,25 +22,22 @@
 </head>
 <body>
 <header class="header">
-    <nav class="header__nav">
+    <nav class="nav">
+      <img src="./assets/images/logo.svg" class="nav__logo" alt="logo">
       
-      <img src="./assets/images/logo.svg" class="header__nav__logo" alt="logo">
-      
-      <div class="header__nav__logo__links">
-        <a href="#" class="header__nav__logo__links__link"> Home</a>
-        <a href="#" class="header__nav__logo__links__link"> New</a>
-        <a href="#" class="header__nav__logo__links__link">Popular</a>
-        <a href="#" class="header__nav__logo__links__link">Trending</a>
-        <a href="#" class="header__nav__logo__links__link">Categories</a>
-
-        
+      <div class="nav__link" id="menu">
+        <a href="#" class="nav__links " :target()> Home</a>
+        <a href="#" class="nav__links"> New</a>
+        <a href="#" class="nav__links">Popular</a>
+        <a href="#" class="nav__links">Trending</a>
+        <a href="#" class="nav__links">Categories</a> 
       </div>
 
-      <a href="" class="header__nav__logo__links__link__menu" > 
-         <img src="./assets/images/icon-menu.svg "class="header__nav__logo__links__link__menu__icon"  alt="menu"></a>
+      <a href="#menu" class="link__menu" > 
+         <img src="./assets/images/icon-menu.svg " alt="menu"></a>
     
-          <a href="" class="header__nav__logo__links__link__menu__icon__menu2" > 
-             <img src="./assets/images/icon-menu-close.svg"class="header__nav__logo__links__link__menu__icon__menu2__close"  alt="menu">
+          <a href="#" class="link__close" > 
+             <img src="./assets/images/icon-menu-close.svg"  alt="menu">
             </a>
     
     </nav>
