@@ -108,7 +108,7 @@ body {
  main {
     margin: 4%;
  }
-.main-containaer{
+.main-container{
     display: grid;
     grid-template-columns: 3, max-content;
     grid-template-areas: "hero" "aside" "products";
@@ -189,21 +189,23 @@ body {
     display: grid;
     gap: 2em;
     &__product {
-
         display: flex;
         gap: 1em;
         
         &__text {
             width: 70%;
+            height: 50%;
             flex: 1;
             &__num {
                 font-size: 1.7rem;
                 font-weight: bold;
                 color: var(--Grayish-blue);
                 &__titl {
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     margin: .5rem 0;
-                    line-height: 2.3;
+                  &__pfs {
+                    font-size: 0.9rem;
+                  }
                 
                 }
             }
@@ -215,12 +217,13 @@ body {
 
 .imag {
     width: 30%;
+    height: 69%;
     max-width: 150px;
     object-fit: cover;
     align-self: start;
 }
 
-@media (min-width:769px) {
+@media (min-width:1440px) {
    
 .nav__links{
 
@@ -252,117 +255,83 @@ display: none;
 }
 
 
-.main-containaer{
+.main-container{
+
     grid-template-rows: repeat(2, max-content);
     grid-template-areas:
     "hero hero hero aside aside"" products  products  products  products  products";
-    gap: 4em 2em;
+    gap: 3em 2em;
 }
 
 .hero {
-    grid-area: hero;
+   display: grid;
+   align-content: space-between;
     &__img {
-        margin: 0 auto;
-        width: 100%;
-        aspect-ratio: 1/1;
-        max-height: 300px;
-        background-size: cover;
-        background-image: url('../news-homepage-main/assets/images/image-web-3-mobile.jpg');
+        
+        background-image: url('../news-homepage-main/assets/images/image-web-3-desktop.jpg');
         &__tex {
-            padding: 3em 0;
+            padding: 0;
+            display: flex;
+            gap: 2em;
+            align-self: center;
             &__titulo {
-                font-size: 2rem;
-                &__ps__p{
-                    line-height: 1.5;
-                    margin: 1em 0;
+                font-size: 3rem;
+                  width: 50%;
+                &__ps{
+                    width: 50%;
+                    align-self: stretch;
+                    gap: 1em;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    &__p{
+                        line-height: 1.5;
+                    margin:0;
                 }
 
             }
         }
     }
+}
 }
 
 .hero__cta {
-    background-color: var(--Soft-red);
-    color: var(--fff-white);
-
-    display: inline-block;
-    text-decoration: none;
-    padding: 1em  2.3em;
-
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 1px;
+    align-self:flex-start;
 }
 
  .aside {
-    grid-area: aside;
-    background-color: var(--Very-dark-blue);
-    color: var(--fff-white);
-    padding: 2.5em 1em;
+    
 
     &__title {
-        font-size: 2rem;
-        color: var(--Soft-orange);
-        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        
 
         &__art {
-              padding: 1.3rem 0;
-              border-bottom: 1px solid var(--Grayish-blue);
+              padding: 2em 0;
+            
 
         
-        &__tit {
-            margin-bottom: 1rem;
-            &__pa{
-                line-height: 1.5;
-                color: var(--Grayish-blue);
-
-            }
-        }
-    }
+        }   
  }
 }
 
- .aside__title__art:last-of-type {
-    padding-bottom: 0%;
-    border-bottom: none;
-}
+
 .products {
-    grid-area: products;
-    padding: 4em 0;
-    display: grid;
-    gap: 2em;
-    &__product {
-
-        display: flex;
-        gap: 1em;
-        
-        &__text {
-            width: 70%;
-            flex: 1;
-            &__num {
-                font-size: 1.7rem;
-                font-weight: bold;
-                color: var(--Grayish-blue);
-                &__titl {
-                    font-size: 1.2rem;
-                    margin: .5rem 0;
-                    line-height: 2.3;
-                
-                }
-            }
-        }
-        
-    }
+    grid-auto-flow: column;
+    padding: 1em 0 2em;
 }
 
+}  
 
-.imag {
-    width: 30%;
-    max-width: 150px;
-    object-fit: cover;
-    align-self: start;
-}
- 
+.nav__link:hover{
+    color:var(--Soft-red);
     
+}
+
+.aside__title__art__tit:hover{
+    color: var(--Soft-orange);
+}
+
+.products__product__text__num__titl:hover{
+    color:var(--Soft-red);
 }

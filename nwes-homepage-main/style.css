@@ -278,15 +278,8 @@ main {
   }
 }
 .nav__link:hover {
-  color: var(--Soft-red);
-}
-
-.aside__title__art__tit:hover {
-  color: var(--Soft-orange);
-}
-
-.products__product__text__num__titl:hover {
-  color: var(--Soft-red);
+  color: red;
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
