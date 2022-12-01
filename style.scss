@@ -345,6 +345,7 @@ main {
 
 .nav__link:hover {
     color: var(--Soft-red);
+    
 
 }
 
@@ -354,4 +355,5 @@ main {
 
 .products__product__text__num__titl:hover {
     color: var(--Soft-red);
+    cursor: pointer;
 }
