@@ -11,7 +11,7 @@ Realice este proyecto con el fin de poder mejorar mis habilidades en html y css 
 - SASS
 - CSS
 ## Enlace para la version publicada
-Visita [aqui](google.com) para ver la pagina en vivo
+Visita [aqui](https://victoriaramos2777.github.io/news-home/) para ver la pagina en vivo
 
 ## Informacion personal
 Para mayor información contáctarme.
